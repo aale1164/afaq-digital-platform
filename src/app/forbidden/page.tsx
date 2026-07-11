@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { ShieldX } from "lucide-react";
+
+export default function ForbiddenPage() { return <div className="container-shell flex min-h-[62vh] items-center justify-center py-16"><div className="max-w-lg text-center"><span className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[color-mix(in_srgb,var(--danger)_9%,transparent)] text-[var(--danger)]"><ShieldX className="h-8 w-8" /></span><p className="font-display mt-6 text-6xl font-bold text-[var(--line-strong)]">403</p><h1 className="font-display mt-4 text-2xl font-bold">ليس لديك تصريح لهذه الصفحة</h1><p className="mt-4 leading-8 text-[var(--muted)]">تم التحقق من الصلاحية داخل الخادم، وليس عبر إخفاء الرابط فقط.</p><Link href="/" className="btn-primary mt-7">العودة للرئيسية</Link></div></div>; }

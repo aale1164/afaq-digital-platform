@@ -1,0 +1,4 @@
+import { Clock3, Wrench } from "lucide-react";
+import { Signature } from "@/components/brand/signature";
+
+export default function MaintenancePage() { return <div className="container-shell flex min-h-[65vh] items-center justify-center py-16"><div className="glass-panel max-w-xl rounded-[30px] p-8 text-center sm:p-12"><span className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[color-mix(in_srgb,var(--gold)_9%,transparent)] text-[var(--gold)]"><Wrench className="h-7 w-7" /></span><h1 className="font-display mt-6 text-2xl font-bold">نوسّع الأفق قليلًا</h1><p className="mt-4 leading-8 text-[var(--muted)]">المنصة تحت صيانة مخطط لها. لا تُرسل عمليات جديدة الآن، وجرّب العودة بعد قليل.</p><p className="mt-4 inline-flex items-center gap-2 text-xs text-[var(--faint)]"><Clock3 className="h-4 w-4" /> لا نضع وقت عودة غير مؤكد</p><Signature className="mt-7 justify-center" /></div></div>; }
